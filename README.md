@@ -1,6 +1,5 @@
-##EDtunnel-呆萌恐龙🦖
+EDtunnel-呆萌恐龙🦖
 <p align="center"> 
-<p align="center">🇨🇳 中文简体  |  <a title="English" href="README_EN.md">🇬🇧 English</a></p>
 <img src="https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/23/667700fe51ffa.png" alt="edgetunnel" style="margin-bottom: -50px;">
 </p>
 
