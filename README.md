@@ -1,6 +1,6 @@
 EDtunnel-呆萌恐龙🦖
 <p align="center"> 
-<img src="https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/23/667700fe51ffa.png" alt="edgetunnel" style="margin-bottom: -50px;">
+<img src="https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/23/6677026d75f05.png" alt="edgetunnel" style="margin-bottom: -50px;">
 </p>
 
 GitHub 存储库 [https://github.com/zizifn/edgetunnel](https://github.com/zizifn/edgetunnel)
