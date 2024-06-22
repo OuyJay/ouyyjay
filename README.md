@@ -16,9 +16,7 @@ EDtunnel-Dāi méng kǒnglóng 🦖
 
 1. 观看YouTube视频：
     
-    [https://youtu.be/Mi6O3dJXeDI](https://youtu.be/Mi6O3dJXeDI)
-    
-2. 克隆此存储库并在 cloudflare 页面中部署。
+    [📺YouTube视频](https://youtu.be/Mi6O3dJXeDI)
     
 
 ## worker.dev 中部署
