@@ -1,103 +1,102 @@
+##EDtunnel-呆萌恐龙🦖
 <p align="center"> 
 <p align="center">🇨🇳 中文简体  |  <a title="English" href="README_EN.md">🇬🇧 English</a></p>
 <img src="https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/22/6676ea0926825.png" alt="edgetunnel" style="margin-bottom: -50px;">
 </p>
 
-GitHub Repository for [https://github.com/zizifn/edgetunnel](https://github.com/zizifn/edgetunnel)
+GitHub 存储库 [https://github.com/zizifn/edgetunnel](https://github.com/zizifn/edgetunnel)
 
-ask question and cloudflare ips: [https://t.me/dmkljlq](https://t.me/dmkljlq)
+询问问题和 cloudflare ips: [https://t.me/dmkljlq](https://t.me/dmkljlq)
 
 [![Repository](https://img.shields.io/badge/View%20on-GitHub-blue.svg)](https://github.com/zizifn/edgetunnel)
 
-## available branches and explain
+## 可用分支并解释
 
-| Branch Name   | Description                                                   |
-| ------------- | ------------------------------------------------------------- |
-| remote-socks5 | Branch for remote SOCKS5 proxy pool used implementation       |
-| socks5        | Branch for SOCKS5 proxyIP implementation                      |
-| vless         | Branch for outbound VLESS protocol implementation             |
-| vless2        | Branch for alternative outbound VLESS protocol implementation |
-| code1         | Branch for code1 feature development                          |
-| code2         | Branch for code2 alternative feature development              |
-| dns           | Branch for DNS alternative related development                |
-| main          | Main branch for the project                                   |
-| pages         | New version for deployment on Cloudflare Pages                |
+| 分支名称 | 说明 |
+| ------------- | ---------------------------- |
+| remote-socks5 | 用于远程 SOCKS5 代理池实现的分支 |
+| socks5 | 用于 SOCKS5 proxyIP 实现的分支 |
+| vless | 用于出站 VLESS 协议实现的分支 |
+| vless2 | 用于替代出站 VLESS 协议实现的分支 |
+| code1 | 用于 code1 功能开发的分支 |
+| code2 | 用于 code2 替代功能开发的分支 |
+| dns | 用于 DNS 替代相关开发的分支 |
+| main | 项目的主分支 |
+| pages | 用于在 Cloudflare Pages 上部署的新版本 |
 
-## Deploy in pages.dev
+## 在 pages.dev 中部署
 
-1. See YouTube Video:
+1. 观看YouTube视频：
 
-   [https://www.youtube.com/watch?v=8I-yTNHB0aw](https://www.youtube.com/watch?v=8I-yTNHB0aw)
+   [https://youtu.be/Mi6O3dJXeDI](https://youtu.be/Mi6O3dJXeDI)
 
-2. Clone this repository deploy in cloudflare pages.
+2. 克隆此存储库并在 cloudflare 页面中部署。
 
-## Deploy in worker.dev
+## 在 worker.dev 中部署
 
-1. Copy `_worker.js` code from [here](https://github.com/OuyJay/EDtunnel/blob/main/_worker.js).
+1. 复制 `_worker.js` 代码来自 [here](https://github.com/OuyJay/EDtunnel/blob/main/_worker.js).
 
-2. Alternatively, you can click the button below to deploy directly.
+2. 或者，您可以单击下面的按钮直接部署。
 
    [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/OuyJay/EDtunnel)
 
-## Lazy to deploy
+## 懒得部署
 
-`aHR0cHM6Ly9vc3MudjJyYXlzZS5jb20vcHJveGllcy9kYXRhLzIwMjMtMDctMzAvRnJFS1lvQS50eHQ=` (free clash.meta subscribe config)
+`aHR0cHM6Ly9vc3MudjJyYXlzZS5jb20vcHJveGllcy9kYXRhLzIwMjMtMDctMzAvRnJFS1lvQS50eHQ=` （免费 clash.meta 订阅配置）
 
-## UUID Setting (Optional)
+## UUID 设置（可选）
 
-1. When deploy in cloudflare pages, you can set uuid in `wrangler.toml` file. variable name is `UUID`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file.
+1. 在cloudflare 页面部署时，可以在wrangler.toml文件中设置 uuid，变量名为UUID.filewrangler.toml也是支持的。（推荐）如果在网页部署，则不能在wrangler.toml文件中设置 uuid。
 
-2. When deploy in worker.dev, you can set uuid in `_worker.js` file. variable name is `userID`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file. in this case, you can also set uuid in `UUID` enviroment variable.
+2. 在worker.dev中部署时，可以在_worker.js文件中设置uuid，变量名为userID.filewrangler.toml也是支持的。(推荐)如果在网页中部署，则不能在wrangler.toml文件中设置uuid，这种情况下，也可以在UUID环境变量中设置uuid。
 
-Note: `UUID` is the uuid you want to set. pages.dev and worker.dev all of them method supported, but depend on your deploy method.
+注意：UUID是您想要设置的 uuid。pages.dev 和 worker.dev 所有方法都支持，但取决于您的部署方法。
 
-### UUID Setting Example
 
-1. single uuid environment variable
+### UUID 设置示例
+
+1. 单个 uuid 环境变量
 
    ```.environment
    UUID = "uuid here your want to set"
    ```
 
-2. multiple uuid environment variable
+2. 多个 uuid 环境变量
 
    ```.environment
    UUID = "uuid1,uuid2,uuid3"
    ```
 
-   note: uuid1, uuid2, uuid3 are separated by commas`,`.
-   when you set multiple uuid, you can use `https://edtunnel.pages.dev/uuid1` to get the clash config and vless:// link.
+   注意：uuid1，uuid2，uuid3 之间以逗号分隔,。当你设置多个 uuid 时，你可以使用它https://edtunnel.pages.dev/uuid1来获取冲突配置和 vless:// 链接。
 
-## subscribe vless:// link (Optional)
+## 订阅 vless:// 链接 (可选)
 
-1. visit `https://edtunnel.pages.dev/uuid your set` to get the subscribe link.
+1. 访问https://edtunnel.pages.dev/uuid your set以获取订阅链接。
 
-2. visit `https://edtunnel.pages.dev/sub/uuid your set` to get the subscribe content with `uuid your set` path.
+2. 访问https://edtunnel.pages.dev/sub/uuid your set以获取带有路径的订阅内容uuid your set。
 
-   note: `uuid your set` is the uuid you set in UUID enviroment or `wrangler.toml`, `_worker.js` file.
-   when you set multiple uuid, you can use `https://edtunnel.pages.dev/sub/uuid1` to get the subscribe content with `uuid1` path.(only support first uuid in multiple uuid set)
+注意：是您在 UUID 环境或文件uuid your set中设置的 uuid 。当您设置多个 uuid 时，您可以使用路径获取订阅内容。（仅支持多个 uuid 集中的第一个 uuid）wrangler.toml_worker.jshttps://edtunnel.pages.dev/sub/uuid1uuid1
 
-3. visit `https://edtunnel.pages.dev/sub/uuid your set/?format=clash` to get the subscribe content with `uuid your set` path and `clash` format. content will return with base64 encode.
+3. 访问以获取带有路径和格式的https://edtunnel.pages.dev/sub/uuid your set/?format=clash订阅内容。内容将以 base64 编码返回。uuid your setclash
 
-   note: `uuid your set` is the uuid you set in UUID enviroment or `wrangler.toml`, `_worker.js` file.
-   when you set multiple uuid, you can will use `https://edtunnel.pages.dev/sub/uuid1/?format=clash` to get the subscribe content with `uuid1` path and `clash` format.(only support first uuid in multiple uuid set)
+注意：是您在 UUID 环境或文件uuid your set中设置的 uuid 。当您设置多个 uuid 时，您将使用它来获取带有路径和格式的订阅内容。（仅支持多个 uuid 集中的第一个 uuid）wrangler.toml_worker.jshttps://edtunnel.pages.dev/sub/uuid1/?format=clashuuid1clash
 
-## subscribe Cloudflare bestip(pure ip) link
+## 订阅 Cloudflare bestip(纯 ip) 链接
 
-1. visit `https://edtunnel.pages.dev/bestip/uuid your set` to get subscribe info.
+1. 访问https://edtunnel.pages.dev/bestip/uuid your set以获取订阅信息。
 
-2. cpoy subscribe url link `https://edtunnel.pages.dev/bestip/uuid your set` to any clients(clash/v2rayN/v2rayNG) you want to use.
+2. 将 url 链接订阅https://edtunnel.pages.dev/bestip/uuid your set到您想要使用的任何客户端（clash/v2rayN/v2rayNG）。
 
-3. done. if have any questions please join [@edtunnel](https://t.me/dmkljlq)
+3. 完成。如果有任何问题请加入 [@edtunnel](https://t.me/dmkljlq)
 
-## multiple port support (Optional)
+## 多端口支持（可选）
 
    <!-- let portArray_http = [80, 8080, 8880, 2052, 2086, 2095];
 	let portArray_https = [443, 8443, 2053, 2096, 2087, 2083]; -->
 
-For a list of Cloudflare supported ports, please refer to the [official documentation](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
+有关 Cloudflare 支持的端口列表，请参阅 [官方文档](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
 
-By default, the port is 80 and 443. If you want to add more ports, you can use the following ports:
+默认端口为80和443，如果要添加更多端口，可以使用以下端口：
 
 ```text
 80, 8080, 8880, 2052, 2086, 2095, 443, 8443, 2053, 2096, 2087, 2083
@@ -105,29 +104,18 @@ http port: 80, 8080, 8880, 2052, 2086, 2095
 https port: 443, 8443, 2053, 2096, 2087, 2083
 ```
 
-if you deploy in cloudflare pages, https port is not supported. Simply add multiple ports node drictly use subscribe link, subscribe content will return all Cloudflare supported ports.
+如果您在 cloudflare 页面中部署，则不支持 https 端口。只需直接使用订阅链接添加多个端口节点，订阅内容将返回所有 Cloudflare 支持的端口。
 
-## proxyIP (Optional)
+## 代理 IP (可选)
 
-1. When deploy in cloudflare pages, you can set proxyIP in `wrangler.toml` file. variable name is `PROXYIP`.
+1.在cloudflare页面部署时，可以在wrangler.toml文件中设置proxyIP，变量名是PROXYIP。
 
-2. When deploy in worker.dev, you can set proxyIP in `_worker.js` file. variable name is `proxyIP`.
+2. 在worker.dev中部署时，可以在_worker.js文件中设置proxyIP，变量名为proxyIP。
 
-note: `proxyIP` is the ip or domain you want to set. this means that the proxyIP is used to route traffic through a proxy rather than directly to a website that is using Cloudflare's (CDN). if you don't set this variable, connection to the Cloudflare IP will be cancelled (or blocked)...
+注意：proxyIP是您要设置的 IP 或域。这意味着 proxyIP 用于通过代理路由流量，而不是直接路由到使用 Cloudflare (CDN) 的网站。如果您不设置此变量，与 Cloudflare IP 的连接将被取消（或阻止）...
 
-resons: Outbound TCP sockets to Cloudflare IP ranges are temporarily blocked, please refer to the [tcp-sockets documentation](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
+原因：到 Cloudflare IP 范围的出站 TCP 套接字暂时被阻止，请参阅 [tcp-sockets 文档](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
 
-## Usage
+## 用法
 
-frist, open your pages.dev domain `https://edtunnel.pages.dev/` in your browser, then you can see the following page:
-The path `/uuid your seetting` to get the clash config and vless:// link.
-
-## Star History
-
-<a href="https://star-history.com/#3Kmfi6HP/EDtunnel&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=3Kmfi6HP/EDtunnel&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=3Kmfi6HP/EDtunnel&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=3Kmfi6HP/EDtunnel&type=Date" />
-  </picture>
-</a>
+首先，在浏览器中打开你的pages.dev域名https://edtunnel.pages.dev/，然后你可以看到以下页面：/uuid your seetting获取冲突配置的路径和vless://链接。
