@@ -1,5 +1,5 @@
-<p **align**="center"> 
-<p **align**="center">🇨🇳 中文简体  |  <a title="English" href="README_EN.md">🇬🇧 English</a></p>
+<p align="center"> 
+<p align="center">🇨🇳 中文简体  |  <a title="English" href="README_EN.md">🇬🇧 English</a></p>
 <img src="https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/22/6676ea0926825.png" alt="edgetunnel" style="margin-bottom: -50px;">
 </p>
 
