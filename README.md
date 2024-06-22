@@ -33,11 +33,11 @@ GitHub 存储库 [https://github.com/zizifn/edgetunnel](https://github.com/zizif
 
 ## 在 worker.dev 中部署
 
-1. 复制 `_worker.js` 代码来自 [here](https://github.com/OuyJay/EDtunnel/blob/main/_worker.js).
+1. 复制 `_worker.js` 代码来自 [here](https://github.com/DaiMengKongLong/EDtunnel/blob/main/_worker.js).
 
 2. 或者，您可以单击下面的按钮直接部署。
 
-   [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/OuyJay/EDtunnel)
+   [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DaiMengKongLong/EDtunnel)
 
 ## 懒得部署
 

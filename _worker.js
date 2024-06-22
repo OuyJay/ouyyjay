@@ -728,7 +728,7 @@ ${วเลสSec}
 <p align='center'><img src='https://tc-1303817403.cos.ap-chengdu.myqcloud.com/2024/06/23/6677026d75f05.png' alt='图片描述' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>Welcome! This function generates configuration for วเลส protocol. If you found this useful, please check our GitHub project for more:</b>
 <b style='font-size: 15px;'>欢迎！这是生成 Dāi méng kǒnglóng 协议的配置。如果您发现这个项目很好用，请查看我们的 GitHub 项目给我一个star：</b>
-<a href='https://github.com/OuyJay/EDtunnel' target='_blank'>EDtunnel - https://github.com/OuyJay/EDtunnel</a>
+<a href='https://github.com/DaiMengKongLong/EDtunnel' target='_blank'>EDtunnel - https://github.com/DaiMengKongLong/EDtunnel</a>
 <iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
 <a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>วเลส 节点订阅连接</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
@@ -743,7 +743,7 @@ ${วเลสSec}
 	const htmlHead = `
   <head>
 	<title>EDtunnel: วเลส configuration</title>
-	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/OuyJay/EDtunnel if you found it useful!'>
+	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/DaiMengKongLong/EDtunnel if you found it useful!'>
 	<meta name='keywords' content='EDtunnel, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta property='og:site_name' content='EDtunnel: วเลส configuration' />
